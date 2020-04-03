@@ -1,0 +1,30 @@
+# Which folder to load game configs from
+current-wargame = "example1"
+
+# Minutes between each check period
+score-interval = 2
+health-check-interval = 5
+
+[api]
+listen-address = "0.0.0.0"
+port = 5000
+public-key = "server.crt"
+private-key = "server.key"
+
+# Files that can be downloaded via the API without authentication
+[api.exposed-files]
+scorebot-ssh-public-keyfile = "./LICENSE.md"
+
+# Used to automate control over VMs for the hypervisor
+[hypervisor]
+manager = "vphere_manager"  # Python module to load
+host = "localhost"
+username = "root"
+password = "changeme"
+
+# PostgreSQL database backend
+[database]
+host = "localhost"
+port = 5432
+username = "root"
+password = "K1ng0fTh3H1ll!"

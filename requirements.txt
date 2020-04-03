@@ -1,0 +1,5 @@
+flask
+flask_restful
+yara-python
+toml
+paramiko

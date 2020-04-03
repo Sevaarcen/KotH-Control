@@ -1,0 +1,12 @@
+{
+    "SSH": {
+        "module": "check_ssh",
+        "points": 5,
+        "username": "scorebot",
+        "keyfile": "./scorebot-files/id_rsa"
+    },
+    "HTTP": {
+        "module": "check_http",
+        "points": 10
+    }
+}
